@@ -1,1 +1,47 @@
-gggg
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+/*estilos generales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Roboto Condensed', sans-serif;
+    color: #eee;   
+}
+body{
+    background:rgba(77, 79, 165);
+}
+.contenedor{
+    margin: auto;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+   
+}
+.barra{
+    width: 350px;
+    height: 20px;
+    background-color: rgba(225, 225, 225, 0.5);
+    border-radius: 10px;
+    box-shadow: 40px 25px 25px rgba(2, 2, 2, 0.2);
+    /*border-bottom: 3px solid rgba(225, 225, 225, 0.2);
+    border-right: 3px solid rgba(225, 225, 225, 0.2);*/
+}
+.habilidades{
+    margin: 35px 0;
+}
+.h2{
+    text-align: center;
+}
+.progreso{
+    width: var(--s);
+    height: 100%;
+    background: rgba(225, 225, 225, 1);
+    border-radius: 10px;
+    animation: Aumentar 1s ease;
+}
+@keyframes Aumentar {
+    0% { width: 0%;}
+    100% { width: var(--s) ;}
+}
